@@ -1,0 +1,26 @@
+
+
+.l-body-header{
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+	width: 100%;
+	height:280px;
+	border-bottom: 3px solid red;
+	// reponsive layout for tablets and up
+	@media only screen and (min-width: 850px) { 
+		height:480px;
+		
+	}
+}
+
+
+.l-body-container{
+	width:100%;
+}
+
+
+.l-body-footer{
+	width:100%;
+	border-top: 3px solid red;
+}

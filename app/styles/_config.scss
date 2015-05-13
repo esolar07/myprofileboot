@@ -1,0 +1,20 @@
+
+//--------------------------------
+// Variables
+//--------------------------------
+
+// font syles
+$base-font-size: 16px;				// page base font size
+$base-line-height:1.5;				// page base line height
+
+
+
+
+
+//--------------------------------
+// Functions and Mixins
+//--------------------------------
+
+@function em($tar, $cxt:$base-font-size){
+ @return ($tar / $cxt) * 1em;
+}

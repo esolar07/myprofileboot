@@ -1,0 +1,16 @@
+
+
+
+.header-container{
+	height:inherit;
+	@include make-row;
+}
+
+.header-name{
+	@include make-sm-column(5);
+}
+
+.navi{
+	@include make-sm-column(7);
+
+}
