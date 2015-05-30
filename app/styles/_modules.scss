@@ -7,16 +7,18 @@
 	//@include make-row;
 	width:100%;
 	height:inherit;
-	border-bottom: 3px solid yellow;
+	border-bottom: 3px solid black;
 }
 
 .header-name{
 	@include make-sm-column(12);
-	margin-top: 100px;
+	margin-top: 0px;
+	padding-top: 30px;
 	//vertical-align: middle;
 	@media only screen and (min-width: 850px) { 
 		@include make-sm-column(5);
 		margin-top: 230px;
+		padding-top: 0px;
 		vertical-align: text-bottom;
 		font-size: em(36px);
 	}
@@ -25,14 +27,12 @@
 .navi{
 	@include make-sm-column(12);
 	margin-top: 150px;
-	//padding-left: 10px;
-	//padding-right: 10px;
 	text-align: center;
 	font-size: em(20px);
 	// reponsive layout for tablets and up
 	@media only screen and (min-width: 850px) { 
 		@include make-sm-column(7);
-		margin-top: 430px;		
+		margin-top: 410px;		
 	}
 }
 
@@ -47,20 +47,49 @@
 }
 
 .about{
-	@include make-row;
+	@include make-row();
 	margin-top: 50px;
-	&-text{
+	margin-right: auto;
+	margin-left: auto;
+	background:yellow;
+	text-align: center;
+	&__text{
 		@include make-sm-column(8);
+		margin-right: auto ;
+		margin-left: auto ;
 		background: red;
 		// reponsive layout for tablets and up
-		@media only screen and (min-width: 850px) { 
-			margin-left: auto;
-			margin-left: auto;
-			background: blue;
+		@media only screen and (min-width: 850px) {
+			@include make-lg-column(10); 
+			background: red;
 		}
 	}
 }
 
+
+.exampleList{
+	@include make-row();
+	background:green;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 20px;
+	&__item{
+		@include make-sm-column(6);
+		margin-left:10px;
+		margin-right:10px;
+		margin-bottom: 10px;
+		border: solid 2px black;
+		background:red;
+		height:300px;
+		// reponsive layout for tablets and up
+		@media only screen and (min-width: 850px) {
+			@include make-lg-column(5); 
+			background: red;
+		}
+
+	}
+}
+
 .foot-text{
-	margin-left: 15px;
+	text-align: center;
 }
