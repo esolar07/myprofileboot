@@ -4,16 +4,16 @@
 ****************************/
 
 .header-container{
-	@include make-row;
+	//@include make-row;
+	width:100%;
 	height:inherit;
-	border-bottom: 3px solid red;
-	background-color: rgba(yellow, 0.4);
+	border-bottom: 3px solid yellow;
 }
 
 .header-name{
 	@include make-sm-column(12);
 	margin-top: 100px;
-	vertical-align: middle;
+	//vertical-align: middle;
 	@media only screen and (min-width: 850px) { 
 		@include make-sm-column(5);
 		margin-top: 230px;
@@ -25,8 +25,8 @@
 .navi{
 	@include make-sm-column(12);
 	margin-top: 150px;
-	padding-left: 10px;
-	padding-right: 10px;
+	//padding-left: 10px;
+	//padding-right: 10px;
 	text-align: center;
 	font-size: em(20px);
 	// reponsive layout for tablets and up
@@ -34,12 +34,30 @@
 		@include make-sm-column(7);
 		margin-top: 430px;		
 	}
-	&-li{
-		display: inline-block;
-		margin-left: 5px;
-		margin-right: 5px;
-		padding-left:20px;
-		padding-right: 20px;
+}
+
+.naviList{
+	&__item{
+	display: inline-block;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding-left:20px;
+	padding-right: 20px;
+	}
+}
+
+.about{
+	@include make-row;
+	margin-top: 50px;
+	&-text{
+		@include make-sm-column(8);
+		background: red;
+		// reponsive layout for tablets and up
+		@media only screen and (min-width: 850px) { 
+			margin-left: auto;
+			margin-left: auto;
+			background: blue;
+		}
 	}
 }
 
