@@ -16,7 +16,7 @@ html,body {
     box-sizing:border-box;
     font-size: $base-font-size;
     line-height: $base-line-height;
-    //background: yellow;
+    background: $pg-background;
 }
 
 *, *:before, *:after{

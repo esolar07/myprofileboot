@@ -52,16 +52,19 @@
 	margin-right: auto;
 	margin-left: auto;
 	background:yellow;
-	text-align: center;
 	&__text{
 		@include make-sm-column(8);
-		margin-right: auto ;
-		margin-left: auto ;
-		background: red;
+		margin-right: 5%;
+		margin-left: 5%;
+		padding:25px;
+		background: pink;
+		font-size: em(20px);
 		// reponsive layout for tablets and up
 		@media only screen and (min-width: 850px) {
 			@include make-lg-column(10); 
-			background: red;
+			margin-right: 5%;
+			margin-left: 5%;
+			font-size: em(26px);
 		}
 	}
 }
@@ -69,10 +72,10 @@
 
 .exampleList{
 	@include make-row();
-	background:green;
-	margin-right: auto;
-	margin-left: auto;
+	margin-right: 5%;
+	margin-left: 5%;
 	padding-top: 20px;
+	background:red;
 	&__item{
 		@include make-sm-column(6);
 		margin-left:10px;
@@ -83,8 +86,8 @@
 		height:300px;
 		// reponsive layout for tablets and up
 		@media only screen and (min-width: 850px) {
-			@include make-lg-column(5); 
-			background: red;
+			@include make-lg-column(4); 
+			background: green;
 		}
 
 	}
