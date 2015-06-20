@@ -1,0 +1,108 @@
+
+/****************************
+***** Modules Styles ********
+****************************/
+
+.header-container{
+	//@include make-row;
+	width:100%;
+	height:inherit;
+	border-bottom: 30px solid black;
+	&:after{
+		content:"";
+		top: 65px;
+		left: 50%;
+		position: relative;
+	 	border-top: 70px solid black;
+	 	border-left: 50px solid transparent;
+	  	border-right: 50px solid transparent;
+	}
+}
+
+.header-name{
+	@include make-sm-column(12);
+	margin-top: 0px;
+	padding-top: 30px;
+	//vertical-align: middle;
+	@media only screen and (min-width: 850px) { 
+		@include make-sm-column(5);
+		margin-top: 230px;
+		padding-top: 0px;
+		vertical-align: text-bottom;
+		font-size: em(36px);
+	}
+}
+
+.navi{
+	@include make-sm-column(12);
+	margin-top: 100px;
+	text-align: center;
+	font-size: em(20px);
+	// reponsive layout for tablets and up
+	@media only screen and (min-width: 850px) { 
+		@include make-sm-column(7);
+		margin-top: 410px;		
+	}
+}
+
+.naviList{
+	//BEM element
+	&__item{
+	display: inline-block;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding-left:20px;
+	padding-right: 20px;
+	}
+}
+
+.about{
+	@include make-row();
+	margin-top: 50px;
+	margin-right: auto;
+	margin-left: auto;
+	background:yellow;
+	&__text{
+		@include make-sm-column(8);
+		margin-right: 5%;
+		margin-left: 5%;
+		padding:25px;
+		background: pink;
+		font-size: em(20px);
+		// reponsive layout for tablets and up
+		@media only screen and (min-width: 850px) {
+			@include make-lg-column(10); 
+			margin-right: 5%;
+			margin-left: 5%;
+			font-size: em(26px);
+		}
+	}
+}
+
+
+.exampleList{
+	@include make-row();
+	margin-right: 5%;
+	margin-left: 5%;
+	padding-top: 20px;
+	background:red;
+	&__item{
+		@include make-sm-column(6);
+		margin-left:10px;
+		margin-right:10px;
+		margin-bottom: 10px;
+		border: solid 2px black;
+		background:red;
+		height:300px;
+		// reponsive layout for tablets and up
+		@media only screen and (min-width: 850px) {
+			@include make-lg-column(4); 
+			background: green;
+		}
+
+	}
+}
+
+.foot-text{
+	text-align: center;
+}

@@ -1,0 +1,32 @@
+
+/****************************
+*****  Base Styles **********
+****************************/
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+html,body {
+    width:100%;
+    box-sizing:border-box;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    background: $pg-background;
+}
+
+*, *:before, *:after{
+	border-sizing:border-box;
+}
+
+li{
+	list-style-type: none;
+}
+
+img{
+	max-width:100%;
+}
