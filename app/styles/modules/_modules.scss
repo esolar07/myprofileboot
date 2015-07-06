@@ -24,7 +24,7 @@
 
 .navi{
 	@include make-sm-column(12);
-	margin-top: 100px;
+	margin-top: 150px;
 	text-align: center;
 	font-size: em(25px);
 	// reponsive layout for tablets and up
@@ -46,23 +46,20 @@
 }
 
 .about{
-	padding-top: 40px;
-	padding-left:10px;
-	padding-right: 10px;
+	padding: 60px 10px;
 	//margin-top: 50px;
-	background:green;
 	border-bottom: 30px solid white;
 	&:after{
 		content:"";
-		top: 150px;
-		left: 50%;
+		top: 160px;
+		left: 45%;
 		position: relative;
 	 	border-top: 60px solid white;
 	 	border-left: 40px solid transparent;
 	  	border-right: 40px solid transparent;
 	  	@media only screen and (min-width: 850px) {
-	  		top: 100px;
-	  		left: 45%;
+	  		top: 170px;
+	  		left: 46%;
 	  		border-top: 70px solid white;
 		 	border-left: 50px solid transparent;
 		  	border-right: 50px solid transparent;
@@ -98,9 +95,8 @@
   	justify-content:center;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 30px;
+	padding: 70px 30px;
 	width: 90%;
-	background:red;
 	// reponsive layout for tablets and up
 	@media only screen and (min-width: 850px) {
 		flex-direction:row;
@@ -109,7 +105,7 @@
 	//BEM Element for .exampleList
 	&__item{
 		margin: 20px auto;
-		width: 50%;
+		width: 75%;
 		height:300px;
 		background:red;
 		border: solid 2px black;
@@ -125,7 +121,7 @@
 }
 
 .foot-text{
-	margin-top: 50px;
+	padding-top: 100px;
 	text-align: center;
 	font-size: em(20px)
 }

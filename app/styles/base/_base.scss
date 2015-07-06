@@ -23,6 +23,10 @@ html,body {
 	border-sizing:border-box;
 }
 
+p{
+    color:$text;
+}
+
 li{
 	list-style-type: none;
 }

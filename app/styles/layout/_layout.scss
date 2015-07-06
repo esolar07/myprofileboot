@@ -7,23 +7,24 @@
 	padding:0;
 	width: 100%;
 	height:70vh;
-	background:   linear-gradient(#000, transparent 95%),
-				  url("/images/me.png");
-	background-repeat: no-repeat;
+	background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/checkerboard.svg),
+				//linear-gradient(#000, transparent 95%),
+				url("/images/me.png");			
 	background-position: 100% 100%;
+	background-blend-mode: overlay;
 	border-bottom: 30px solid white;
 	&:after{
 		content:"";
-		top: 200px;
-		left: 40%;
+		top: 45px;
+		left: 46%;
 		position: relative;
 	 	border-top: 60px solid white;
 	 	border-left: 40px solid transparent;
 	  	border-right: 40px solid transparent;
 	  	// reponsive layout for tablets and up
 	  	@media only screen and (min-width: 850px) {
-	  		top: 120px;
-	  		left: 50%;
+	  		top: 60px;
+	  		left: 46%;
 	  		border-top: 70px solid white;
 		 	border-left: 50px solid transparent;
 		  	border-right: 50px solid transparent;
@@ -39,22 +40,24 @@
 
 .l-body-container{
 	width:100%;
+	background: $pg-background-2;
 }
 
 .l-body-examples{
 	width:100%;
+	background: $pg-background;
 	border-bottom: 30px solid white;
 	&:after{
 		content:"";
-		top: 150px;
-		left: 40%;
+		top: 100px;
+		left: 45%;
 		position: relative;
 	 	border-top: 60px solid white;
 	 	border-left: 40px solid transparent;
 	  	border-right: 40px solid transparent;
 	  	@media only screen and (min-width: 850px) {
-	  		top: 100px;
-	  		left: 45%;
+	  		top: 110px;
+	  		left: 46%;
 	  		border-top: 70px solid white;
 		 	border-left: 50px solid transparent;
 		  	border-right: 50px solid transparent;
@@ -64,5 +67,6 @@
 
 .l-body-footer{
 	width:100%;
-	height: 100px;
+	height: 200px;
+	background: $pg-background-2;
 }
