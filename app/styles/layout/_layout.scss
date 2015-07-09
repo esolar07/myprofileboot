@@ -45,7 +45,10 @@
 
 .l-body-examples{
 	width:100%;
-	background: $pg-background;
+	background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/checkerboard.svg),
+				rgba($pg-background, 0.8);
+	background-position: 100% 100%;
+	background-blend-mode: overlay;
 	border-bottom: 30px solid white;
 	&:after{
 		content:"";

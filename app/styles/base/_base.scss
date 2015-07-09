@@ -34,3 +34,22 @@ li{
 img{
 	max-width:100%;
 }
+
+a{
+    color:$text;
+    &:link {
+    text-decoration: none;
+    }
+
+    &:visited {
+        text-decoration: none;
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &:active {
+        text-decoration: none;
+    }
+}
