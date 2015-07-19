@@ -15,7 +15,7 @@
 	//vertical-align: middle;
 	@media only screen and (min-width: 850px) { 
 		@include make-sm-column(5);
-		margin-top: 230px;
+		margin-top: 150px;
 		padding-top: 0px;
 		vertical-align: text-bottom;
 		font-size: em(36px);
@@ -35,6 +35,10 @@
 }
 
 .naviList{
+	margin-top: -20px;
+	padding-right: 0px;
+	padding-left: 0px;
+	background:red;
 	//BEM element for .naviList
 	&__item{
 	display: inline-block;
@@ -42,6 +46,7 @@
 	margin-right: 5px;
 	padding-left:20px;
 	padding-right: 20px;
+	border: 2px solid $text;
 	}
 }
 
