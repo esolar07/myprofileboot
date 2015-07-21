@@ -4,17 +4,25 @@
 //--------------------------------
 
 // font syles
-$base-font-size: 16px;				// page base font size
-$base-line-height:1.5;				// page base line height
+$base-font-size: 16px;					// page base font size
+$base-line-height:1.5;					// page base line height
 
 // colors
-$pg-background: #000;				// Black
-$pg-background-2: #FFD700;			// Gold
-$text: #fff;					    // White	
-$nav-btn-border: #000;              // Black
+$pg-background: #000;					// Black
+$pg-background-2: #FFD700;				// Gold
+$text: #fff;					    	// White	
+$nav-btn-border: #000;              	// Black
+$pg-divider: #fff;					    // White
 
 
-//--------------------------------
+$form-background:#F3F3F3;				//Whitesmoke
+$form-border:#696969; 					//dim-grey
+$input-border:#FFD700;					// Gold
+$input-text: #FFD700;					// Gold
+$input-background: rgba(0, 0, 0, 0.7);   // Black Transparent
+
+
+//-------------------------------
 // Functions and Mixins
 //--------------------------------
 

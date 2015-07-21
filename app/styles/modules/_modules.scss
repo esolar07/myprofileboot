@@ -53,19 +53,19 @@
 .about{
 	padding: 60px 10px;
 	//margin-top: 50px;
-	border-bottom: 30px solid white;
+	border-bottom: 30px solid $pg-divider;
 	&:after{
 		content:"";
 		top: 160px;
 		left: 45%;
 		position: relative;
-	 	border-top: 60px solid white;
+	 	border-top: 60px solid $pg-divider;
 	 	border-left: 40px solid transparent;
 	  	border-right: 40px solid transparent;
 	  	@media only screen and (min-width: 850px) {
 	  		top: 170px;
 	  		left: 46%;
-	  		border-top: 70px solid white;
+	  		border-top: 70px solid $pg-divider;
 		 	border-left: 50px solid transparent;
 		  	border-right: 50px solid transparent;
 	  	}
@@ -131,6 +131,50 @@
 	}
 }
 
+.page-form{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 80px;
+	width:90%;
+	@media only screen and (min-width: 850px) {
+		width:50%;
+	}
+	&__input{
+		margin-top: 30px;
+		margin-right: auto;
+		margin-left: auto;
+		padding:20px;
+		width:90%;
+		color:$input-text;
+		border-top:0px;
+	    border-left:0px;
+	    border-right:0px;
+	    border-bottom:5px solid $input-border;
+	    background:$input-background;
+	}
+	&__txtarea{
+		margin-top: 30px;
+		margin-right: auto;
+		margin-left: auto;
+		color:$input-text;
+		border:2px solid $input-border;
+		background:$input-background;
+	}
+	&__submit{
+		margin-top: 30px;
+		margin-right: auto;
+		margin-left: auto;
+		padding:10px;
+		width:40%;
+		background:$form-background;
+		border:2px solid $input-border;
+	}
+}
+
+
 .social-icons{
 	margin-right: auto;
 	margin-left: auto;
@@ -159,7 +203,7 @@
 }
 
 .foot-text{
-	padding-top: 20px;
+	padding-top: 15px;
 	text-align: center;
 	font-size: em(20px);
 }
