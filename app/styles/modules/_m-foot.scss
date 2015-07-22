@@ -1,0 +1,32 @@
+.social-icons{
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 95px;
+	width:100%;
+	text-align: center;
+	@media only screen and (min-width: 850px) {
+		width:80%;
+	}
+	//BEM Element for .social-icons
+	&__item{
+		display: inline-block;
+		margin-right: auto;
+		margin-left: auto;
+		padding-right: 10px;
+		padding-left: 10px;
+		width:50px;
+		height:50px;
+		//media query for BEM Element 
+		// reponsive layout for tablets and up
+		@media only screen and (min-width: 850px) {
+			width:100px;
+			height:100px;
+		}
+	}
+}
+
+.foot-text{
+	padding-top: 15px;
+	text-align: center;
+	font-size: em(20px);
+}
