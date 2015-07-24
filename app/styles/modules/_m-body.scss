@@ -55,7 +55,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	padding: 70px 30px;
-	width: 90%;
+	width: 95%;
 	// reponsive layout for tablets and up
 	@media only screen and (min-width: 850px) {
 		flex-direction:row;
@@ -64,7 +64,7 @@
 	//BEM Element for .exampleList
 	&__item{
 		margin: 20px auto;
-		width: 99%;
+		width: 100%;
 		height:300px;
 		background:red;
 		border: solid 2px black;
@@ -78,6 +78,29 @@
 
 	}
 }
+
+
+.site-description{
+	margin-top:171px;
+	padding:15px;
+	width: 100%;
+	height:125px;
+	background: $sitedescrip;
+	z-index: 998;
+	&__name{
+		padding-top: 5px;
+		padding-bottom: 5px;
+		font-size: em(20px);
+		z-index: 999;
+	}
+	&__old{
+		padding-top: 5px;
+		padding-bottom: 5px;
+		font-size: em(13px);
+		z-index: 999;
+	}
+}
+
 
 .page-form{
 	display:flex;

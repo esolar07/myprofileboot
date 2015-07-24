@@ -3,23 +3,31 @@
 // Variables
 //--------------------------------
 
+//imports
+@import url(http://fonts.googleapis.com/css?family=Lato|Oswald);
+
 // font syles
-$base-font-size: 16px;					// page base font size
-$base-line-height:1.5;					// page base line height
+$base-font-size: 16px;							// page base font size
+$base-line-height:1.5;							// page base line height
+$font1:'Oswald', sans-serif;
+$font2:'Lato', sans-serif;
+
+
+
 
 // colors
-$pg-background: #000;					// Black
-$pg-background-2: #FFD700;				// Gold
-$text: #fff;					    	// White	
-$nav-btn-border: #000;              	// Black
-$pg-divider: #fff;					    // White
-
-
-$form-background:#F3F3F3;				//Whitesmoke
-$form-border:#696969; 					//dim-grey
-$input-border:#FFD700;					// Gold
-$input-text: #FFD700;					// Gold
-$input-background: rgba(0, 0, 0, 0.7);   // Black Transparent
+$pg-background: #000;							// Black
+$pg-background-2: #FFD700;						// Gold
+$text: #fff;					    			// White
+$text2: #FFD700;								// Gold
+$nav-btn-border: #000;              			// Black
+$pg-divider: #fff;					    		// White
+$sitedescrip: rgba(#000000, 0.5);        	     // Black Transparent
+$form-background:#999900;						//Whitesmoke
+$form-border:#696969; 							//dim-grey
+$input-border:#FFD700;							// Gold
+$input-text: #FFD700;							// Gold
+$input-background: rgba(#F5F5F5, 0.5);         // White Transparent
 
 
 //-------------------------------

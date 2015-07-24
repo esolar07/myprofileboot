@@ -1,0 +1,34 @@
+.l-body-header{
+	margin: 0;
+	padding:0;
+	width: 100%;
+	height:70vh;
+	background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/checkerboard.svg),
+				//linear-gradient(#000, transparent 95%),
+				url("/images/me.png");			
+	background-position: 100% 100%;
+	background-blend-mode: overlay;
+	border-bottom: 30px solid $pg-divider;
+	&:after{
+		content:"";
+		top: 45px;
+		left: 46%;
+		position: relative;
+	 	border-top: 60px solid $pg-divider;
+	 	border-left: 40px solid transparent;
+	  	border-right: 40px solid transparent;
+	  	// reponsive layout for tablets and up
+	  	@media only screen and (min-width: 850px) {
+	  		top: 60px;
+	  		left: 46%;
+	  		border-top: 70px solid $pg-divider;
+		 	border-left: 50px solid transparent;
+		  	border-right: 50px solid transparent;
+	  	}
+	}
+	// reponsive layout for tablets and up
+	@media only screen and (min-width: 850px) { 
+		height:450px;
+		
+	}
+}

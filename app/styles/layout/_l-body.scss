@@ -1,0 +1,52 @@
+.l-body-container{
+	width:100%;
+	background: $pg-background-2;
+}
+
+.l-body-examples{
+	width:100%;
+	background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/checkerboard.svg),
+				rgba($pg-background, 0.8);
+	background-position: 100% 100%;
+	background-blend-mode: overlay;
+	border-bottom: 30px solid $pg-divider;
+	&:after{
+		content:"";
+		top: 100px;
+		left: 45%;
+		position: relative;
+	 	border-top: 60px solid $pg-divider;
+	 	border-left: 40px solid transparent;
+	  	border-right: 40px solid transparent;
+	  	@media only screen and (min-width: 850px) {
+	  		top: 110px;
+	  		left: 46%;
+	  		border-top: 70px solid $pg-divider;
+		 	border-left: 50px solid transparent;
+		  	border-right: 50px solid transparent;
+	  	}
+	}
+}
+
+.l-body-form{
+	width:100%;
+	background: $pg-background;
+	//background:linear-gradient(135deg, rgba($pg-background,1) 0%, rgba($pg-background,1) 50%, rgba($form-background,1) 51%, rgba($form-background,1) 100%);
+	border-bottom: 30px solid $pg-divider;
+	&:after{
+		content:"";
+		top: 100px;
+		left: 45%;
+		position: relative;
+	 	border-top: 60px solid $pg-divider;
+	 	border-left: 40px solid transparent;
+	  	border-right: 40px solid transparent;
+	  	@media only screen and (min-width: 850px) {
+	  		top: 110px;
+	  		left: 46%;
+	  		border-top: 70px solid $pg-divider;
+		 	border-left: 50px solid transparent;
+		  	border-right: 50px solid transparent;
+	  	}
+	}
+}
