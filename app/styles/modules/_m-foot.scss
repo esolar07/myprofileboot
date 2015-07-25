@@ -1,7 +1,7 @@
 .social-icons{
 	margin-right: auto;
 	margin-left: auto;
-	padding-top: 95px;
+	padding-top: 65px;
 	width:100%;
 	text-align: center;
 	@media only screen and (min-width: 850px) {
@@ -12,6 +12,7 @@
 		display: inline-block;
 		margin-right: auto;
 		margin-left: auto;
+		padding-top: 0px;
 		padding-right: 10px;
 		padding-left: 10px;
 		width:50px;
@@ -26,7 +27,6 @@
 }
 
 .foot-text{
-	padding-top: 15px;
 	text-align: center;
 	font-size: em(20px);
 }

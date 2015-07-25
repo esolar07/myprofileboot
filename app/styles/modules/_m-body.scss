@@ -5,7 +5,7 @@
 	&:after{
 		content:"";
 		top: 160px;
-		left: 45%;
+		left: 40%;
 		position: relative;
 	 	border-top: 60px solid $pg-divider;
 	 	border-left: 40px solid transparent;
@@ -22,20 +22,22 @@
 	&__head{
 		text-align: center;
 		@media only screen and (min-width: 850px) {
-			padding-left: 50px;
-			text-align: left;
+			margin-left: 160px;
+    		text-align: left;
 		}
 	}
 	//BEM Element for .about
 	&__text{
-		padding:20px;
+		padding-top:20px;
+		padding-bottom: 20px;
 		margin-left: auto;
 		margin-right: auto;
-		width: 75%;
+		width: 95%;
 		font-size: em(20px);
 		// reponsive layout for tablets and up
 		@media only screen and (min-width: 850px) {
 			padding:40px;
+			width: 75%;
 			font-size: em(26px);
 		}
 	}
@@ -54,8 +56,8 @@
   	justify-content:center;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 70px 30px;
-	width: 95%;
+	padding: 70px 10px;
+	width: 100%;
 	// reponsive layout for tablets and up
 	@media only screen and (min-width: 850px) {
 		flex-direction:row;
@@ -66,7 +68,7 @@
 		margin: 20px auto;
 		width: 100%;
 		height:300px;
-		background:red;
+		background:green;
 		border: solid 2px black;
 		// reponsive layout for tablets and up
 		@media only screen and (min-width: 850px) {
@@ -108,10 +110,20 @@
 	justify-content:center;
 	margin-right: auto;
 	margin-left: auto;
-	padding: 80px;
+	padding: 80px 10px;
 	width:100%;
+	text-align: center;
+	// reponsive layout for tablets and up
 	@media only screen and (min-width: 850px) {
 		width:50%;
+	}
+	&__head{
+		text-align: center;
+		// reponsive layout for tablets and up
+		@media only screen and (min-width: 850px) {
+			margin-left: -20px;
+    		text-align: left;
+    	}
 	}
 	&__input{
 		margin-top: 30px;
