@@ -2,11 +2,9 @@
 	margin-right: auto;
 	margin-left: auto;
 	padding-top: 65px;
-	width:100%;
+	width:800%;
+	height:300px;
 	text-align: center;
-	@media only screen and (min-width: 850px) {
-		width:80%;
-	}
 	//BEM Element for .social-icons
 	&__item{
 		display: inline-block;
@@ -17,11 +15,50 @@
 		padding-left: 10px;
 		width:50px;
 		height:50px;
+		background-size: cover;
 		//media query for BEM Element 
 		// reponsive layout for tablets and up
 		@media only screen and (min-width: 850px) {
-			width:100px;
+			width:150px;
 			height:100px;
+		}
+		// BEM Modifiers for .social__item (added backgronds for each)
+		&--fb{
+			background: url("/images/fb.png");
+		}
+		&--tw{
+			background:url("/images/ig.png");
+		}
+		&--cp{
+			background: url("/images/cp.png");
+		}
+		&--gh{
+			background: url("/images/gh.png");
+		}
+		&--bb{
+			background: url("/images/bb.png");
+		}
+	}
+	&__tooltip{
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+		padding: 3px;
+		font-size: em(15px);
+		color:black;
+		background: white;
+		@media only screen and (min-width: 850px) {
+			width:100px;
+		}
+		// tooltip bottom triangle
+		&:after{
+			content:"";
+			position: relative;
+			top: 20%;
+			left: -35px;
+		 	border-top: 15px solid $pg-divider;
+		 	border-left: 15px solid transparent;
+		  	border-right: 15px solid transparent;
 		}
 	}
 }
