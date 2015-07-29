@@ -1,6 +1,9 @@
 
 // displays social icon tool tip
-.social-icons__item:hover .social-icons__tooltip{
-	margin-top: -10px;
-	visibility: visible;
+@media only screen and (min-width: 850px) {
+	.social-icons__item:hover .social-icons__tooltip{
+		margin-top: -10px;
+		visibility: visible;
+
+	}
 }
