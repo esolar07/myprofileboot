@@ -1,7 +1,7 @@
 .social-icons{
 	margin-right: auto;
 	margin-left: auto;
-	padding-top: 100px;
+	padding-top: 70px;
 	width:100%;
 	height:200px;
 	text-align: center;
@@ -14,13 +14,10 @@
 		padding-top: 0px;
 		padding-right: 10px;
 		padding-left: 10px;
-		width:50px;
-		height:50px;
-		background-size: contain;
-		background-repeat: no-repeat;
 		//media query for BEM Element 
 		// reponsive layout for tablets and up
 		@media only screen and (min-width: 850px) {
+			padding-top: 40px;
 			width:150px;
 			height:100px;
 		}
@@ -30,7 +27,7 @@
 		display: block;
 		position: absolute;
 		float: left;
-		top: -40px;
+		top: -5px;
 		left:35px;
 		padding-top: 5px;
 		padding-bottom: 5px;
@@ -39,6 +36,7 @@
 		text-align: center;
 		color:black;
 		background: white;
+		visibility: hidden;
 		transition: all .2s linear;
 		//media query for BEM Element 
 		// reponsive layout for tablets and up
@@ -47,7 +45,6 @@
 			padding-top: 5px;
 			padding-bottom: 5px;
 			width:100px;
-			visibility: hidden;
 		}
 
 		// tooltip bottom triangle
