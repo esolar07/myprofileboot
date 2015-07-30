@@ -71,6 +71,7 @@
 		height:300px;
 		background:green;
 		border: solid 2px black;
+		overflow: hidden;
 		// reponsive layout for tablets and up
 		@media only screen and (min-width: 850px) {
 			// padding-left: 15px;
@@ -84,23 +85,22 @@
 
 
 .site-description{
-	margin-top:171px;
+	position: relative;
+	margin-top:350px;
+	margin-right: auto;
+	margin-left: auto;
 	padding:15px;
-	width: 100%;
+	width: 0%;
 	height:125px;
+	font-size: em(0px);
 	background: $sitedescrip;
-	z-index: 998;
-	&__name{
+	visibility: hidden;
+	transition: all .2s linear;
+	&__info{
 		padding-top: 5px;
 		padding-bottom: 5px;
-		font-size: em(20px);
-		z-index: 999;
-	}
-	&__old{
-		padding-top: 5px;
-		padding-bottom: 5px;
-		font-size: em(13px);
-		z-index: 999;
+		width: 100%;
+		
 	}
 }
 
