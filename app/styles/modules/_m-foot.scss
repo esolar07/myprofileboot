@@ -31,7 +31,7 @@
 		position: absolute;
 		float: left;
 		top: -40px;
-		left:35px;
+		left:20px;
 		padding-top: 5px;
 		padding-bottom: 5px;
 		width:100px;
@@ -40,6 +40,7 @@
 		color:black;
 		background: white;
 		transition: all .2s linear;
+		visibility: hidden;
 		//media query for BEM Element 
 		// reponsive layout for tablets and up
 		@media only screen and (min-width: 850px) {
@@ -47,7 +48,6 @@
 			padding-top: 5px;
 			padding-bottom: 5px;
 			width:100px;
-			visibility: hidden;
 		}
 
 		// tooltip bottom triangle

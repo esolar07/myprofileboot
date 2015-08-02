@@ -6,7 +6,6 @@
 .header-name{
 	//@include make-sm-column(12);
 	width:100%;
-	margin-top: 20px;
 	padding-top: 10px;
 	font-size: em(70px);
 	text-align: center;
@@ -14,8 +13,10 @@
 	vertical-align: middle;
 	// reponsive layout for tablets and up
 	@media only screen and (min-width: 850px) { 
-		@include make-sm-column(5);
-		margin-top: 150px;
+		margin-top: 0px;
+		margin-right: 75px;
+		padding-top: 50px;
+		font-size: em(90px);
 		vertical-align: text-bottom;
 	}
 }
@@ -27,13 +28,13 @@
 	text-align: center;
 	// reponsive layout for tablets and up
 	@media only screen and (min-width: 850px) { 
-		@include make-sm-column(7);
-		margin-top: 330px;		
+		margin-top: 240px;		
+		margin-left: 50px;
 	}
 }
 
 .naviList{
-	margin-top: -20px;
+	margin-top: -40px;
 	//BEM element for .naviList
 	&__item{
 		display: inline-block;
@@ -52,7 +53,7 @@
 	}
 	// reponsive layout for tablets and up - for .naviList
 	@media only screen and (min-width: 850px) {
-		margin-top: 20px;
-		margin-left: 50px;
+		margin-top: -20px;
+		margin-left: 500px;
 	}
 }
