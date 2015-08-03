@@ -6,16 +6,14 @@
 .header-name{
 	//@include make-sm-column(12);
 	width:100%;
-	padding-top: 10px;
+	padding-top: 30px;
 	font-size: em(70px);
 	text-align: center;
 	font-weight: bolder;
 	vertical-align: middle;
 	// reponsive layout for tablets and up
 	@media only screen and (min-width: 850px) { 
-		margin-top: 0px;
-		margin-right: 75px;
-		padding-top: 50px;
+		padding-top: 70px;
 		font-size: em(90px);
 		vertical-align: text-bottom;
 	}
@@ -23,18 +21,17 @@
 
 .navi{
 	//@include make-sm-column(12);
-	width:100%;
 	margin-top: 240px;
 	text-align: center;
 	// reponsive layout for tablets and up
 	@media only screen and (min-width: 850px) { 
 		margin-top: 240px;		
-		margin-left: 50px;
 	}
 }
 
 .naviList{
 	margin-top: -40px;
+	width: 100%;
 	//BEM element for .naviList
 	&__item{
 		display: inline-block;
@@ -53,7 +50,8 @@
 	}
 	// reponsive layout for tablets and up - for .naviList
 	@media only screen and (min-width: 850px) {
-		margin-top: -20px;
-		margin-left: 500px;
+		margin-top: -50px;
+		padding-right: 100px;
+		text-align: right;
 	}
 }

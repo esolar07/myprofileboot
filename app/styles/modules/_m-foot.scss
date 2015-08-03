@@ -19,7 +19,7 @@
 	}
 	// BEM Element
 	&__tooltip{
-		display: block;
+		display: none;
 		position: absolute;
 		float: left;
 <<<<<<< HEAD
@@ -42,6 +42,7 @@
 		//media query for BEM Element 
 		// reponsive layout for tablets and up
 		@media only screen and (min-width: 850px) {
+			display: block;
 			left:35px;
 			padding-top: 5px;
 			padding-bottom: 5px;
