@@ -39,3 +39,9 @@ $input-background: rgba(#F5F5F5, 0.5);          // White Transparent
  @return ($tar / $cxt) * 1em;
 }
 
+// mixin to add border triangles to section dividers
+@mixin border-triangle($color, $top, $side){
+	border-top: $top solid $color;
+	border-left: $side solid transparent;
+	border-right: $side solid transparent;
+}
