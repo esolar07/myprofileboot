@@ -5,10 +5,7 @@
 
 .l-body-examples{
 	width:100%;
-	background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/checkerboard.svg),
-				rgba($pg-background, 0.8);
-	background-position: 100% 100%;
-	background-blend-mode: overlay;
+  background:url("/images/headerBackground.png");
 	border-bottom: 30px solid $pg-divider;
 	// border bottom triangle
 	&:after{
@@ -16,16 +13,12 @@
 		top: 100px;
 		left: 40%;
 		position: relative;
-	 	border-top: 60px solid $pg-divider;
-	 	border-left: 40px solid transparent;
-	  	border-right: 40px solid transparent;
-	  	@media only screen and (min-width: 850px) {
-	  		top: 110px;
-	  		left: 46%;
-	  		border-top: 70px solid $pg-divider;
-		 	border-left: 50px solid transparent;
-		  	border-right: 50px solid transparent;
-	  	}
+		@include border-triangle($pg-divider, 60px, 40px);
+	  @media only screen and (min-width: 850px) {
+	  	top: 110px;
+	  	left: 46%;
+			@include border-triangle($pg-divider, 70px, 50px);
+	  }
 	}
 }
 
@@ -40,15 +33,11 @@
 		top: 100px;
 		left: 40%;
 		position: relative;
-	 	border-top: 60px solid $pg-divider;
-	 	border-left: 40px solid transparent;
-	  	border-right: 40px solid transparent;
-	  	@media only screen and (min-width: 850px) {
-	  		top: 100px;
-	  		left: 46%;
-	  		border-top: 70px solid $pg-divider;
-		 	border-left: 50px solid transparent;
-		  	border-right: 50px solid transparent;
+		@include border-triangle($pg-divider, 60px, 40px);
+	  @media only screen and (min-width: 850px) {
+	  	top: 100px;
+	  	left: 46%;
+			@include border-triangle($pg-divider, 70px, 50px);
 	  	}
 	}
 }

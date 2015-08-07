@@ -12,7 +12,7 @@
 	  	@media only screen and (min-width: 850px) {
 	  		top: 170px;
 	  		left: 46%;
-			@include border-triangle($pg-divider, 70px, 50px)
+			@include border-triangle($pg-divider, 70px, 50px);
 	  	}
 	}
 	//BEM Element for .about
@@ -49,8 +49,8 @@
 
 .exampleList{
 	display:flex;
-  	flex-direction:column;
-  	justify-content:center;
+  flex-direction:column;
+  justify-content:center;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 70px 10px;
@@ -95,8 +95,8 @@
 	margin-right: auto;
 	margin-left: auto;
 	padding:15px;
-	width: 0%;
-	height:135px;
+	width: 100%;
+	height:145px;
 	font-size: em(0px);
 	background: $sitedescrip;
 	visibility: hidden;
@@ -105,7 +105,7 @@
 		padding-top: 5px;
 		padding-bottom: 5px;
 		width: 100%;
-		
+
 	}
 }
 
