@@ -30,7 +30,7 @@
 		margin-left: auto;
 		margin-right: auto;
 		width: 95%;
-		font-size: em(20px);
+		font-size: em(30px);
 		// reponsive layout for tablets and up
 		@media only screen and (min-width: 850px) {
 			padding:40px;
@@ -103,6 +103,10 @@
 		padding-bottom: 5px;
 		width: 100%;
 		color: $text;
+	}
+	&__link{
+		padding-bottom: 5px;
+		border-bottom: 1px solid white;
 	}
 }
 

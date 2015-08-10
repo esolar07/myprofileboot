@@ -16,6 +16,15 @@
 				<link rel="stylesheet" href="styles/main.css">
 				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 				<!-- endbuild -->
+				<!--[if IE]>
+					<style type="text/css">
+						.exampleList{
+							@media only screen and (min-width: 850px) {
+								flex-direction:column;
+							}
+						}
+					</style>
+				<![endif]-->
 		</head>
 		<body>
 				<!--[if lt IE 10]>
@@ -26,15 +35,15 @@
 								<h1 class="header-name">Eddie Solar</h1>
 								<nav class="navi">
 										<ul class="naviList">
-												<li class="naviList__item"><a href="#">Home</a></li>
-												<li class="naviList__item"><a href="#">About</a></li>
-												<li class="naviList__item"><a href="#">Contact</a></li>
+												<li class="naviList__item"><a href="#about">About</a></li>
+												<li class="naviList__item"><a href="#work">Work</a></li>
+												<li class="naviList__item"><a href="mailto:esolar07@gmail.com">Contact</a></li>
 										</ul>
 								</nav>
 						</div>
 				</header>
 				<main class="l-body-container">
-						<section class="about">
+						<section class="about" id="about">
 								<h1 class='about__head'>Front-End Development</h1>
 								<div class='about__text'>
 										<p>Hi, I'm Eddie Solar, a self-taught front-end web developer from Miami, FL. I am obsessed with expanding my craft, solving challenging problems and staying on the bleeding edge.
@@ -45,20 +54,20 @@
 										</span>
 								</div>
 						</section>
-						<section class="l-body-examples">
+						<section class="l-body-examples" id="work">
 								<ul class="exampleList">
 										<li class="exampleList__item exampleList__item--brp">
 												<!-- <img src="images/brp.jpg" alt="BRP Training Site"> -->
 												<section class="site-description">
 														<h3 class="site-description__info">BRPTraining.com</h3>
-														<p class="site-description__info">Check out the old site - BRPTraining.com/2</p>
+														<p class="site-description__info">Check out the old site - <a class="site-description__link" href="brptraining.com/2">BRPTraining.com/2</a></p>
 												</section>
 										</li>
 										<li class="exampleList__item exampleList__item--mrp">
 												<!-- <img src="images/mrp.jpg" alt="MichyRPhotography Site"> -->
 												<section class="site-description">
 														<h3 class="site-description__info">MichyRPhotography.com</h3>
-														<p class="site-description__info">Check out the old site - MichyRPhotography.com/1</p>
+														<p class="site-description__info">Check out the old site - <a class="site-description__link" href="michyrphotography.com/1">MichyRPhotography.com/1</a></p>
 												</section>
 										</li>
 										<li class="exampleList__item">
