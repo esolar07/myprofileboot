@@ -24,23 +24,3 @@
 	  }
 	}
 }
-
-.l-body-form{
-	width:100%;
-	background: $pg-background;
-	//background:linear-gradient(135deg, rgba($pg-background,1) 0%, rgba($pg-background,1) 50%, rgba($form-background,1) 51%, rgba($form-background,1) 100%);
-	border-bottom: 30px solid $pg-divider;
-	// border bottom triangle
-	&:after{
-		content:"";
-		top: 100px;
-		left: 40%;
-		position: relative;
-		@include border-triangle($pg-divider, 60px, 40px);
-	  @media only screen and (min-width: 850px) {
-	  	top: 100px;
-	  	left: 46%;
-			@include border-triangle($pg-divider, 70px, 50px);
-	  	}
-	}
-}

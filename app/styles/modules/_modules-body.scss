@@ -1,0 +1,135 @@
+.about{
+	padding: 60px 10px;
+	//margin-top: 50px;
+	border-bottom: 30px solid $pg-divider;
+	&:after{
+		content:"";
+		top: 160px;
+		left: 45%;
+		position: relative;
+	 	border-top: 60px solid $pg-divider;
+	 	border-left: 40px solid transparent;
+	  	border-right: 40px solid transparent;
+	  	@media only screen and (min-width: 850px) {
+	  		top: 170px;
+	  		left: 46%;
+	  		border-top: 70px solid $pg-divider;
+		 	border-left: 50px solid transparent;
+		  	border-right: 50px solid transparent;
+	  	}
+	}
+	//BEM Element for .about
+	&__head{
+		text-align: center;
+		color: $text2;
+		@media only screen and (min-width: 850px) {
+			padding-left: 150px;
+			text-align: left;
+		}
+	}
+	//BEM Element for .about
+	&__text{
+		padding:20px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 75%;
+		font-size: em(20px);
+		// reponsive layout for tablets and up
+		@media only screen and (min-width: 850px) {
+			padding:40px;
+			font-size: em(26px);
+		}
+	}
+}
+
+.hyperlink{
+	margin-top:25px;
+	padding:10px;
+	border: 2px solid $text;
+}
+
+
+.exampleList{
+	display:flex;
+  	flex-direction:column;
+  	justify-content:center;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 70px 30px;
+	width: 90%;
+	// reponsive layout for tablets and up
+	@media only screen and (min-width: 850px) {
+		flex-direction:row;
+		flex-wrap:wrap;
+	}
+	//BEM Element for .exampleList
+	&__item{
+		margin: 20px auto;
+		width: 99%;
+		height:300px;
+		background:red;
+		border: solid 2px black;
+		// reponsive layout for tablets and up
+		@media only screen and (min-width: 850px) {
+			// padding-left: 15px;
+			// padding-right: 15px;
+			width:45%;
+			background: yellow;
+		}
+
+	}
+}
+
+.page-form{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 80px;
+	width:90%;
+	@media only screen and (min-width: 850px) {
+		width:50%;
+	}
+	&__head{
+		text-align: center;
+		color: $text2;
+		@media only screen and (min-width: 850px) {
+			padding-left: 130px;
+			text-align: left;
+		}
+	}
+	&__input{
+		margin-top: 30px;
+		margin-right: auto;
+		margin-left: auto;
+		padding:20px;
+		width:90%;
+		font-size: em(20px);
+		color:$input-text;
+		border-top:0px;
+	    border-left:0px;
+	    border-right:0px;
+	    border-bottom:5px solid $input-border;
+	    background:$input-background;
+	}
+	&__txtarea{
+		margin-top: 30px;
+		margin-right: auto;
+		margin-left: auto;
+		font-size: em(20px);
+		color:$input-text;
+		border:2px solid $input-border;
+		background:$input-background;
+	}
+	&__submit{
+		margin-top: 30px;
+		margin-right: auto;
+		margin-left: auto;
+		padding:10px;
+		width:40%;
+		font-size: em(20px);
+		background:$form-background;
+		border:2px solid $input-border;
+	}
+}
