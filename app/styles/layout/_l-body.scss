@@ -5,10 +5,11 @@
 
 .l-body-examples{
 	width:100%;
-  background-image:linear-gradient( black, transparent 100%),
-				      url("/images/headerBackground.png");
-	background-position: 0% 100%;
-	background-repeat: no-repeat;
+	background: black;
+  // background:linear-gradient( black, transparent 100%),
+	// 			      url("/images/headerBackground.png");
+	// background-position: 0% 100%;
+	// background-repeat: no-repeat;
 	border-bottom: 30px solid $pg-divider;
 	// border bottom triangle
 	&:after{
