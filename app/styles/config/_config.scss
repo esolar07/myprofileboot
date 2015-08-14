@@ -4,13 +4,15 @@
 //--------------------------------
 
 //imports
-@import url(http://fonts.googleapis.com/css?family=Lato|Oswald);
 
+// Google fonts
+@import url(http://fonts.googleapis.com/css?family=Arimo|Oswald|Francois+One);
 // font syles
 $base-font-size: 16px;							// page base font size
 $base-line-height:1.5;							// page base line height
-$font1:'Oswald', sans-serif;
-$font2:'Lato', sans-serif;
+$font1: 'Arimo', sans-serif;
+$font2: 'Oswald', sans-serif;
+$font-header: 'Francois One', sans-serif;
 
 
 
