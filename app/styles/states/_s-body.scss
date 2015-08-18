@@ -1,7 +1,14 @@
+// displays white transparent background when hovered
+.hyperlink:hover{
+	background:$btn-hover;
+  border:none;
+}
+
+
 
 // displays site desciption when hovering over site item
 .exampleList__item:hover .site-description{
-	margin-top: 171px;
+	margin-top: -130px;
 	width:100%;
 	font-size: em(20px);
 	visibility: visible;

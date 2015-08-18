@@ -47,6 +47,7 @@
 		font-size: em(16px);
 		border: 2px solid $text;
 		background-clip: padding-box;
+		transition: all .2s linear;
 		// reponsive layout for tablets and up
 		@media only screen and (min-width: 850px) {
 			margin-left: 30px;
