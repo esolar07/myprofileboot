@@ -2,7 +2,7 @@
 	margin: 0px;
 	padding:0px;
 	width: 100%;
-	height:90vh;
+	height:560px;
 	background: url("/images/me2.png");
 	background-position: 0% 100%;
 	background-repeat: no-repeat;
@@ -24,6 +24,6 @@
 	}
 	// reponsive layout for tablets and up
 	@media only screen and (min-width: 850px) {
-		height:450px;
+		height:490px;
 	}
 }
