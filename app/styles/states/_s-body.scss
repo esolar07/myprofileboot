@@ -9,10 +9,13 @@
 
 // displays site desciption when hovering over site item
 .exampleList__item:hover .site-description{
-	top: -155px;
+	top: -110px;
 	width:100%;
-	font-size: em(20px);
+	font-size: em(15px);
 	visibility: visible;
+	@media only screen and (min-width: 850px) {
+		font-size: em(20px);
+	}
 }
 
 // changes color of site desciption linls hovering
