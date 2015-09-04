@@ -34,10 +34,10 @@ li{
 
 img{
 	max-width:100%;
-  height: inherit;
+  height:auto;
   // reponsive layout for tablets and up
   @media only screen and (min-width: 850px) {
-		height: initial;
+		height: inherit;
   }
 }
 
